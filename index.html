@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oscar?</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">HOME</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">ANIMAÇÃO</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">AÇÃO</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">AVENTURA</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">TERROR</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">DOMINIO</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa biblioteca o que precisa para seu entreterimento!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima aventura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/impuros 60-08-29_013709313.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/pinoquio 6090-08-29_013855743.png"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/macaco ee-08-29_014030440.png" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/wolverine-08-29_014158951.png" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/moana-08-29_014300299.png" alt="Livro sobre portugol" />
+        </div>
+        
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+   
+
+  </section>
+
+  
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">AÇÃO</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">ANIMAÇÃO</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">JOGOS</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">TERROR</a>
+      </li>
+      
+      </li>
+    </ul>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
